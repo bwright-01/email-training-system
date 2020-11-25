@@ -181,3 +181,18 @@ body{
   background-color: white;
   border: 1px solid #106ebe;
 }
+
+/*Styles specifically for admin settings*/
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.save-button{
+  width: 140px;
+}
+
+.reset-button{
+  width: 180px;
+}

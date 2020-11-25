@@ -1,0 +1,153 @@
+/*
+    view_item.css
+    Software Engingeering CSCI 3428
+    Shannon Power A00271744
+    James Heading A00438459
+	Theresa Clarke A00429814
+	Ben Wright A00374119
+	Hannah Serroul A00408086
+	Keenan King A00401667
+    CSS for student_view_sent.html
+            admin_view_sent.html
+            student_view_inbox.html
+            admin_view_inbox.html
+*/
+
+/* Ben's stuff */
+
+body {
+    margin: 0px;
+
+}
+
+
+.view {
+    display: flex;
+}
+
+.menu-button{
+    width: 100%;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.button-style {
+    background-color: white;
+    border-radius: 0px;
+    border-right: 1px solid #edebe8;
+    color: #495057;
+    transition: all 0.5s;
+}
+
+.button-style:hover {
+    background-color: #e4f1fd;
+    border-color: #106ebe;
+
+}
+
+/* Hannah's stuff*/
+
+.inbox-container{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+
+}
+
+.menu-container {
+    flex-direction: column;
+    width: 300px;
+    border-right: 2px #edebe8;
+}
+
+.sb-container {
+    display: flex;
+    flex-direction: row;
+    background: #faf9f8;
+    color: #323130; /*#495057;*/
+    width: 100%;
+    border-bottom: 1px solid #edebe8;
+    border-left: 1px solid #edebe8;
+    border-right: 2px solid #edebe8;
+    height: 50px;
+}
+
+.indent {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.indent-head {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: -10px;
+    font-weight: bold;
+}
+
+.indent:hover {
+    cursor: default;
+}
+
+.indent-head:hover {
+    cursor: default;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: #323130;
+    width: 100%;
+    height: 350px;
+    border-bottom: 2px solid #edebe8;
+    border-right: 2px solid #edebe8;
+    border-left: 2px solid #edebe8;
+}
+
+.main-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.labels-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 45px;
+}
+
+.labels {
+    margin-bottom: -2px;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.labels:hover {
+    cursor: default;
+}
+
+.main-body {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    overflow: auto;
+    /*border-top: 2px solid #edebe8;*/
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: inset;
+    border-width: 100%;
+}

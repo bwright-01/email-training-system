@@ -19,12 +19,8 @@
     <title>Admin Email System</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="css/settings.css">
 
-    <link rel="stylesheet" href="css/admin_settings.css">
-
-    <link rel="stylesheet" href="css/group_project.css">
+    <link rel="stylesheet" href="group_project.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -36,7 +32,7 @@
     <script src="./scripts/jquery-3.4.1.min.js"></script>
 
     <div data-role="page">
-        <div class="input-group-text title settings-title"  data-role=header>
+        <div class="input-group-text title" data-role=header>
             SETTINGS
         </div>
 		
@@ -45,7 +41,7 @@
             <span>Use the boxes below to change the student's help popups.</span>
         </div>
 
-		<div class="view header-container" data-role="content">
+		<div class="view" data-role="content">
             <!-- To header and textbox-->
             <div class="input-group-text" data-role="controlgroup" data-type="horizontal">
                 <a class="composeHeader">To</a>
@@ -72,29 +68,30 @@
                 <a data-role="button" class="btn composeField" onclick=" "><textarea rows="3" id="bodyPopup"></textarea></a>
             </div>
         </div>
+		
+		<div class="input-group-text" data-role="controlgroup" data-type="horizontal">
+            <label for="theme">Theme:</label>
+			<select name="theme" id="theme">
+				<option value="white">White</option>
+				<option value="darkgrey">Dark Grey</option>
+				<option value="black">Black</option>
+			</select>
+		</div>
+		
+        <!--Body  Footer -->
+        <div class="input-group-text" data-role=footer>
+        </div>
 
-        <div class="help-cancel-settings">
-                    
-            <div class="dropdown">
-                <button class="dropbtn">Theme</button>
-                <div class="dropdown-content">
-                <a href="#">White</a>
-                <a href="#">Dark Grey</a>
-                <a href="#">Black</a>
-                </div>
-            </div>
-
-            <div data-role="controlgroup" data-type="horizontal">
-                <!-- SAVE CHANGES BUTTON - saves the input given by admin -->
-                <a data-role="button" class="btn mybtncolor main-button-settings button-style save-button" onclick="confirmChoice(changeStudentHelpPopups,'Do you want to save your changes?')">Save Changes</a>
-                <!-- RESET TO DEFAULT - resets the help messages to default -->
-                <a data-role="button" class="btn mybtncolor main-button-settings button-style reset-button" onclick="confirmChoice(resetStudentHelpPopups,'Do you want to reset the popup messages to default?')">Reset to Default</a>
-                <!-- BACK BUTTON - goes back to previous page -->
-                <a data-role="button" class="btn mybtncolor main-button-settings button-style" onclick="confirmChoice(goBack,'Go back to the previous page?')">Back</a>
-                <!-- HELP BUTTON - opens help page -->
-                <a data-role="button" class="btn mybtncolor main-button-settings button-style" onclick="helpButton()">Help</a> <!--TODO: Need to edit helpButton() to include this page-->
-            </div>
-    
+        <!--Buttons-->
+        <div data-role="controlgroup" data-type="horizontal">
+            <!-- SAVE CHANGES BUTTON - saves the input given by admin -->
+            <a data-role="button" class="btn mybtncolor" onclick="confirmChoice(changeStudentHelpPopups,'Do you want to save your changes?')">Save Changes</a>
+			<!-- RESET TO DEFAULT - resets the help messages to default -->
+            <a data-role="button" class="btn mybtncolor" onclick="confirmChoice(resetStudentHelpPopups,'Do you want to reset the popup messages to default?')">Reset to Default</a>
+			<!-- BACK BUTTON - goes back to previous page -->
+            <a data-role="button" class="btn mybtncolor" onclick="confirmChoice(goBack,'Go back to the previous page?')">Back</a>
+            <!-- HELP BUTTON - opens help page -->
+            <a data-role="button" class="btn mybtncolor" onclick="helpButton()">Help</a> <!--TODO: Need to edit helpButton() to include this page-->
         </div>
     </div>
 
